@@ -8,7 +8,7 @@ script "Contest27Leaderboard.ash"
 *	is recolored to stand out.
 /*******************************************************/
 
-boolean[string] names = $strings[efot, LadyJ, Margaret Houlihan, Somersaulter, Mister Mickey, DoubleGold, MagicToast, CzarWhuzHere666, Monechetti, Isladar, asmithsgirl, Starbearer, Ninamo, Marge, MarenG9, Quintavirus, Nienor, lagoticspy, TwoHearted_Flail, Reso, Big Daddy Grimm, Mana Yachanichu, CherryJ, Mirrorshades, wrldwzrd89, Laidak, greycat, Commander Vimes, Lynn Gwynny, EstroJenn, LanioX, jojomojo, DarthNoob7, chameco, Bilfred, Baden, dogletta, ilee, Ouro Boros, rainierburger, Bale, TwirlyRotini, Zen00, Argwarg, Syi, chotoobo, nagyss, FinaiAttack, Actually Steve, Hendrix788, Tiny Plastic Xairon, StiffKnees, Mr Gravy, Ravien, Lhopitals, BabyScarface, Louis of Apshai, MasterSilex, Eevilcat];
+boolean[string] names = $strings[efot, ladyj, margaret houlihan, somersaulter, mister mickey, doublegold, magictoast, czarwhuzhere666, monechetti, isladar, asmithsgirl, starbearer, ninamo, marge, mareng9, quintavirus, nienor, lagoticspy, twohearted_flail, reso, big daddy grimm, mana yachanichu, cherryj, mirrorshades, wrldwzrd89, laidak, greycat, commander vimes, lynn gwynny, estrojenn, laniox, jojomojo, darthnoob7, chameco, bilfred, baden, dogletta, ilee, ouro boros, rainierburger,  bale, twirlyrotini, zen00, argwarg, syi, chotoobo, nagyss, finaiattack, actually steve, hendrix788, tiny plastic xairon, stiffknees, mr gravy, ravien, lhopitals, babyscarface, louis of apshai, mastersilex, eevilcat];
 
 void main()
 {
@@ -26,7 +26,7 @@ void main()
 			times += 1;
 		else
 		{
-			if (names contains name)
+			if (names contains name.to_lower_case())
 			{
 				if (boards > 4 && prizes == 0)
 				{
