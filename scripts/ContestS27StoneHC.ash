@@ -56,4 +56,5 @@ void main()
 		else if (!stone(name))
 			print(name + " has an intact stone.","red");
 	}
+	print("Done!");
 }
