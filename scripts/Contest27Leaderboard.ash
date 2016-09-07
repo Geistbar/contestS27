@@ -14,13 +14,15 @@ void main()
 {
 	int times; int prizes; int boards; string name;
 	string page = visit_url("peevpee.php?place=boards");
+	int index = index_of(page,"Hardcore&nbsp;Winningest");
+	page = substring(page,index_of(page,"Hardcore&nbsp;Winningest"));
 	matcher winningest = create_matcher("(?<=(\">))([A-z0-9 ]+)(?=&nbsp;&nbsp;&nbsp;)",page);
 	// matcher winningest = create_matcher("(?<=(\">))([0-9,]+)(?!&nbsp;&nbsp;&nbsp;)",page); // Finds scores!
 	
 	while (find(winningest))
 	{
 		name = group(winningest);
-		if (times < 150 || times > 179)
+		if (times > 29)
 			times += 1;
 		else
 		{
