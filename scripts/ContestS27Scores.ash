@@ -22,7 +22,7 @@ int winningest(string player)
 {
 	int score;
 	string page = visit_url("showplayer.php?who=" + data[player]);
-	matcher winningest = create_matcher("(?<=(HC Winningness:</b></td><td>))([0-9,]+)(?!</tr><tr>)",page);
+	matcher winningest = create_matcher("(?<=(HC Winningness:</b></td><td>))([0-9,-]+)(?!</tr><tr>)",page);
 	//matcher winningest = create_matcher("([0-9,]+)(?=<b>HC Winningness:</b></td><td>)",page);
 	
 	if (find(winningest))
