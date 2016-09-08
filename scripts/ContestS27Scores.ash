@@ -52,6 +52,6 @@ void main()
 			}
 		}
 		print(player + ": " + output[player]);
-		output[player] = -1; largest = -1; times+=1;
+		output[player] = -999999999; largest = -999999999; times+=1;
 	}
 }
